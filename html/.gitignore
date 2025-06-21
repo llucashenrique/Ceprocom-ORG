@@ -1,0 +1,28 @@
+# Oculta variáveis de ambiente
+.env
+
+# Oculta scripts sensíveis
+cep.js
+db.js
+email.js
+pix.js
+requerimento.js
+server.js
+serverpix.js
+teste.js
+
+# Oculta a pasta com outros JS
+js/
+
+# Oculta arquivos de dependência (para repositório front-end no GitHub Pages não precisa)
+package.json
+package-lock.json
+
+# Oculta dependências locais do Node
+node_modules/
+
+# Oculta arquivos de sistema (opcional)
+.DS_Store
+*.log
+
+

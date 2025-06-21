@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+    <!--Google fonts-->
+
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Bootstrap icons-->
+
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/stylecontact.css">
+    <script src="../js/menu.js" defer></script>
+
+
+</head>
+<body>
+    
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="../html/index.html">
+                    <img src="../images/Logo-Ceprocom.png-removebg-preview.png" alt="Logo-Ceprocom">
+                </a>
+            </div> <!--LOGO-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="../html/index.html">INICIO</a></li>
+                    <li><a href="../html/sobre.html">SOBRE</a></li>
+                    <li><a href="../html/sobre.html">CONTATO</a></li>
+                    <li><a href="../html/doacao.html">COMO AJUDAR</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-doacao">
+                <a href="../html/doacao.html">
+                    <button>DOE AGORA</button>
+                </a>
+            </div><!--btn-button-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div><!--btn-fechar-->
+
+                <nav>
+                    <ul>
+                        <li><a href="../html/index.html">INICIO</a></li>
+                        <li><a href="../html/sobre.html">SOBRE</a></li>
+                        <li><a href="../html/sobre.html">CONTATO</a></li>
+                        <li><a href="../html/doacao.html">COMO AJUDAR</a></li>
+                        <li><a href="../html/doacao.html">DOE AGORA</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+
+        </div> <!--INTERFACE-->
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-container">
+                <h2>CONTATO-NOS</h2>
+            </div>
+        </section>
+        
+        <section class="contact-info">
+            <h2>NOSSA <span>LOCALIZAÇÃO</span></h2>
+            <p>AJUDE A SALVAR A REDE DE AÇÃO INFANTIL</p>
+            <table>
+                <tr>
+                    <td>Endereço de Email</td>
+                    <td><a href="mailto:supportercare@savechildren.org">
+                        suportercepro@.ceprocomorg</a></td>
+                </tr>
+                <tr>
+                    <td>Número de Contato</td>
+                    <td><a href="tel:+18002435075">(800) 5488-5215</a></td>
+                </tr>
+                <tr>
+                    <td>Endereço</td>
+                    <td><a href="#"> R. Prof. Cortês, 351 - Centro<br>São Bento do Sapucaí - SP, 12490-000</a></td>
+                </tr>
+                <tr>
+                    <td>Contato importante do aluno</td>
+                    <td><a href="mailto:media@ceprocom@gmail.com.br">ceprocom@gmail.com.br</a></td>
+                </tr>
+                <tr>
+                    <td>Informações de contatos de imprensa</td>
+                    <td><a href="mailto:schoolclub@savechildren.org">ceporcom@ceprocom.org</a></td>
+                </tr>
+                <tr>
+                    <td>Contato Voluntário</td>
+                    <td><a href="#">Formulário de Interesse Voluntário</a></td>
+                </tr>
+                <tr>
+                    <td>Informações de contatos de imprensa</td>
+                    <td><a href="#">Formulário de Interesse Voluntário</a></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    
+    <footer>
+        <div class="interface">
+
+            <section class="line-footer1">
+
+                <h2>Quer receber noticias sobre nossos eventos ? </h2>
+                <p>Insira seu e-mail e fique por dentro de todos os eventos do ano do ceprocom.</p>
+                <form id="newsletter-form">
+                    <input type="email" id="newsletter-email" placeholder="Digite seu e-mail" required>
+                    <input type="button" value="CADASTRE-SE" class="btn-cadastre-se" onclick="sendNewsletterEmail()">
+                </form>
+
+            </section>
+
+            <section class="line-footer2">
+
+                <div class="box-line-footer">
+                    <img src="../images/Logo-Ceprocom.png-removebg-preview.png" alt="logotipo Ceprocom">
+                    <p>"EDUCANDO PARA A VIDA E A ESPERANCA"</p>
+                </div>
+
+                <div class="box-line-footer">
+
+                    <h3>HOME</h3>
+                    <div class="links-footers">
+                        <a href="../html/index.html">Inicio</a>
+                        <a href="#">Sobre</a>
+                        <a href="#">Contato</a>
+                        <a href="../html/doacao.html">Como Ajudar</a>
+                    </div>
+                </div>
+
+                <div class="box-line-footer">
+                    <h3>NOSSO ENDERECO</h3>
+                    <div class="endereco-footers">
+                        <ul>
+                            <li>Sao bento do sapucai,SP</li>
+                            <li>Centro</li>
+                            <li>Avenida Aparecida, 81</li>
+                            <li>12490-000</li>
+                            <li>(12) 99684-8263</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box-line-footer">
+                    <h3>SUPORTE</h3>
+                    <div class="links-footers">
+                        <a href="#">Politica de privacidade</a>
+                        <a href="mailto:seuemail@exemplo.com?subject=Quero%20entrar%20em%20contato">Enviar um email</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+
+
+                <div class="box-line-footer">
+                    <h3>NOS SIGA</h3>
+                    <div class="btn-redes">
+                        <a href="https://www.facebook.com/centropromocionalcomunitario.ceprocom" target="_blank"><button><i class="bi bi-facebook"></i></button></a>
+                        <a href="https://wa.me/5511999999999?text=Olá%2C%20gostaria%20de%20saber%20mais%20informações!" target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
+                        <a href="https://www.instagram.com/ceprocom/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section class="line-footer3">
+                <p>Ceprocom 2024 &copy; Todos os direitos reservados</p>
+            </section>
+        </div>
+    </footer>
+
+
+</body>
+</html>

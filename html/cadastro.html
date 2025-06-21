@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!--Google fonts-->
+
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Bootstrap icons-->
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/stylecadastro.css">
+
+    <!--JavaScript-->
+    <script src="../js/menu.js" defer></script>
+
+    <title>Cadastro</title>
+</head>
+
+</html>
+
+<body>
+
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="../html/index.html">
+                    <img src="../images/Logo-Ceprocom.png-removebg-preview.png" alt="Logo-Ceprocom">
+                </a>
+            </div> <!--LOGO-->
+
+            <div class="texto-mobile">
+                <p>CADASTRO DE PESSOAS NO <span> CEPROCOM</span></p>
+            </div>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="../html/index.html">INICIO</a></li>
+                    <li><a href="../html/sobre.html">SOBRE</a></li>
+                    <li><a href="../html/sobre.html">CONTATO</a></li>
+                    <li><a href="../html/doacao.html">COMO AJUDAR</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-doacao">
+                <a href="../html/doacao.html">
+                    <button>DOE AGORA</button>
+                </a>
+            </div><!--btn-button-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div><!--btn-fechar-->
+
+                <nav>
+                    <ul>
+                        <li><a href="../html/index.html">INICIO</a></li>
+                        <li><a href="../html/sobre.html">SOBRE</a></li>
+                        <li><a href="../html/sobre.html">CONTATO</a></li>
+                        <li><a href="../html/doacao.html">COMO AJUDAR</a></li>
+                        <li><a href="../html/doacao.html">DOE AGORA</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+
+
+
+        </div> <!--INTERFACE-->
+    </header>
+
+    <div class="container">
+        <form action="/cadastro" method="POST">
+
+            <div class="form first active">
+                <div class="details personal">
+                    <span class="title">DADOS DO FILHO</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Entre com o nome do filho" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Data de Nascimento</label>
+                            <input type="date" id="datafilho" name="datafilho" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>CPF</label>
+                            <input type="text" id="cpffilho" name="cpffilho" placeholder="Entre com o CPF do filho"
+                                maxlength="14" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>RG</label>
+                            <input type="text" id="rgfilho" name="rgfilho" placeholder="Enter com o RG do filho"
+                                required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="genero">Gênero</label>
+                            <select id="genero" name="genero" required>
+                                <option value="" disabled selected>Selecione o gênero</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="nao-informar">Prefiro não informar</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="pcd">PcD</label>
+                            <select id="pcd" name="pcd" required>
+                                <option value="" disabled selected>Selecione uma opção</option>
+                                <option value="sim">Sim</option>
+                                <option value="nao">Não</option>
+                                <option value="nao-prefiro-responder">Prefiro não responder</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">DADOS DA MÃE</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Nome Completo</label>
+                            <input type="text" id="nomemae" name="nomemae" placeholder="Enter com o nome da mãe"
+                                required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Data de Nascimento</label>
+                            <input type="date" id="datamae" name="datamae" placeholder="Enter data de nascimento "
+                                required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>CPF</label>
+                            <input type="text" id="cpfmae" name="cpfmae" placeholder="Entre com o CPF da mãe"
+                                maxlength="14" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>RG</label>
+                            <input type="text" id="rgmae" name="rgmae" placeholder="Entre com o RG da mãe"
+                                maxlength="12" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Telefone</label>
+                            <input type="text" id="telefomae" name="telefomae" placeholder="Enter com o numero da mãe"
+                                maxlength="11" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ocupação</label>
+                            <input type="text" id="Ocupacaomae" name="Ocupacaomae"
+                                placeholder="Enter com a ocupação da mãe" required>
+                        </div>
+                    </div>
+
+                    <button type="button" class="nextBtn">
+                        <span class="btnText">Próxima</span>
+                        <i class="bi bi-arrow-right-circle"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">DADOS DO PAI</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Nome Completo</label>
+                            <input type="text" id="nomepai" name="nomepai" placeholder="Enter com o nome do pai"
+                                required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Data de Nascimento</label>
+                            <input type="date" id="datapai" name="datapai" placeholder="Enter com a data do pai"
+                                required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>CPF</label>
+                            <input type="text" id="cpfpai" name="cpfpai" placeholder="Enter com o CPF do pai"
+                                maxlength="14" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>RG</label>
+                            <input type="text" id="rgpai" name="rgpai" placeholder="Enter com o RG do pai"
+                                maxlength="12" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Telefone</label>
+                            <input type="text" id="telefonepai" name="telefonepai"
+                                placeholder="Enter com o numero do pai" maxlength="11" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ocupação</label>
+                            <input type="text" id="ocupacaopai" name="ocupacaopai"
+                                placeholder="Enter com a ocupação do pai" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details Family">
+                    <span class="title">Informações Gerais</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>CEP</label>
+                            <input type="text" id="cep" name="cep" placeholder="Enter com seu CEP" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Cidade</label>
+                            <input type="text" id="cidade" name="cidade" placeholder="Entre com sua cidade" readonly>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Estado</label>
+                            <input type="text" id="estado" name="estado" placeholder="Enter com seu estado" readonly>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter com o email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="renda">Renda Familiar</label>
+                            <input type="text" id="renda" name="renda" placeholder="Entre com sua renda" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Número do PIS</label>
+                            <input type="number" id="pis" name="pis" placeholder="Entre com o numero do PIS" required>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="bi bi-arrow-left-circle"></i>
+                            <span class="btnText">Voltar</span>
+                        </div>
+
+                        <button type="submit" class="submitBtn">
+                            <span class="btnText">Enviar</span>
+                            <i class="bi bi-check-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', async function(event) {
+    event.preventDefault();  // Impede o envio padrão do formulário
+
+    // Capturar os dados do formulário
+    const formData = new FormData(this);
+    const data = {
+        nome: formData.get('nome'),
+        datafilho: formData.get('datafilho'),
+        cpffilho: formData.get('cpffilho'),
+        rgfilho: formData.get('rgfilho'),
+        genero: formData.get('genero'),
+        pcd: formData.get('pcd'),
+
+        nomemae: formData.get('nomemae'),
+        datamae: formData.get('datamae'),
+        cpfmae: formData.get('cpfmae'),
+        rgmae: formData.get('rgmae'),
+        telefomae: formData.get('telefomae'),
+        ocupacaomae: formData.get('Ocupacaomae'),
+
+        nomepai: formData.get('nomepai'),
+        datapai: formData.get('datapai'),
+        cpfpai: formData.get('cpfpai'),
+        rgpai: formData.get('rgpai'),
+        telefonepai: formData.get('telefonepai'),
+        ocupacaopai: formData.get('ocupacaopai'),
+
+        cep: formData.get('cep'),
+        cidade: formData.get('cidade'),
+        estado: formData.get('estado'),
+        email: formData.get('email'),
+        renda: formData.get('renda'),
+        pis: formData.get('pis')
+    };
+
+    try {
+        const response = await fetch('http://localhost:3000/cadastro', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'  // Enviando como JSON
+            },
+            body: JSON.stringify(data)  // Convertendo os dados para JSON
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+            alert('Cadastro realizado com sucesso!');
+        } else {
+            alert(`Erro: ${result.error}`);
+        }
+    } catch (error) {
+        alert('Ocorreu um erro ao enviar os dados.');
+        console.error(error);
+    }
+});
+
+
+    </script>
+
+    <script>
+        document.getElementById('cep').addEventListener('blur', async function () {
+            const cep = this.value.replace(/\D/g, '');
+
+            if (cep.length === 8) {
+                try {
+                    const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+                    if (!response.ok) {
+                        throw new Error('Erro ao buscar o CEP');
+                    }
+
+                    const data = await response.json();
+
+                    if (data.erro) {
+                        alert('CEP não encontrado!');
+                    } else {
+                        document.getElementById('cidade').value = data.localidade;
+                        document.getElementById('estado').value = data.uf;
+                    }
+                } catch (error) {
+                    console.error('Erro:', error);
+                    alert('Não foi possível buscar o CEP. Tente novamente.');
+                }
+            } else {
+                alert('CEP inválido. Deve conter 8 dígitos.');
+            }
+        });
+    </script>
+
+
+    <footer>
+        <div class="interface">
+            <section class="line-footer1">
+
+                <h2>Quer receber noticias sobre nossos eventos ? </h2>
+                <p>Insira seu e-mail e fique por dentro de todos os eventos do ano do ceprocom.</p>
+                <form id="newsletter-form">
+                    <input type="email" id="newsletter-email" placeholder="Digite seu e-mail" required>
+                    <input type="button" value="CADASTRE-SE" class="btn-cadastre-se" onclick="sendNewsletterEmail()">
+                </form>
+
+
+
+            </section>
+
+            <section class="line-footer2">
+
+                <div class="box-line-footer">
+                    <img src="../images/Logo-Ceprocom.png-removebg-preview.png" alt="logotipo Ceprocom">
+                    <p>"EDUCANDO PARA A VIDA E A ESPERANCA"</p>
+                </div>
+
+                <div class="box-line-footer">
+
+                    <h3>HOME</h3>
+                    <div class="links-footers">
+                        <a href="../html/index.html">Inicio</a>
+                        <a href="#">Sobre</a>
+                        <a href="#">Contato</a>
+                        <a href="../html/doacao.html">Como Ajudar</a>
+                    </div>
+                </div>
+
+                <div class="box-line-footer">
+                    <h3>NOSSO ENDERECO</h3>
+                    <div class="endereco-footers">
+                        <ul>
+                            <li>São Bento do Sapucaí, SP</li>
+                            <li>Centro</li>
+                            <li>Avenida Aparecida, 81</li>
+                            <li>12490-000</li>
+                            <li>(12) 99684-8263</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box-line-footer">
+                    <h3>SUPORTE</h3>
+                    <div class="links-footers">
+                        <a href="#">Politica de privacidade</a>
+                        <a href="mailto:seuemail@exemplo.com?subject=Quero%20entrar%20em%20contato">Enviar um email</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+
+
+                <div class="box-line-footer">
+                    <h3>NOS SIGA</h3>
+                    <div class="btn-redes">
+                        <a href="https://www.facebook.com/centropromocionalcomunitario.ceprocom"
+                            target="_blank"><button><i class="bi bi-facebook"></i></button></a>
+                        <a href="https://wa.me/5511999999999?text=Olá%2C%20gostaria%20de%20saber%20mais%20informações!"
+                            target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
+                        <a href="https://www.instagram.com/ceprocom/" target="_blank"><button><i
+                                    class="bi bi-instagram"></i></button></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="line-footer3">
+                <p>Ceprocom 2024 &copy; Todos os direitos reservados</p>
+            </section>
+        </div>
+    </footer>
+
+    <script src="../cep.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,669 @@
+/*ESTILOS GERAIS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+body {
+    padding-top: 120px; /* Ajuste essa altura conforme necessário */
+}
+
+
+/* CABECALHO */
+header {
+    position: fixed; /* Fixa o header no topo da página */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0f3;
+    z-index: 10001;
+    padding: 25px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgba(49, 49, 49, 0.959);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header .btn-doacao button {
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #da291ce7;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.815);
+    transition: .2s;
+}
+
+.btn-doacao button:hover {
+    box-shadow: 0px 0px 8px rgba(255, 0, 0, 0.9);
+    transform: scale(1.05);
+}
+
+.interface .logo{
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+header .logo:hover {
+    transform: scale(1.09); 
+}
+
+.interface .btn-doacao {
+    margin-right: 30px;
+}
+
+/*ESTILO DO MENU MOBILE */
+
+.texto-mobile{
+    display: none;
+}
+
+.btn-abrir-menu{
+    display: none;
+    position: fixed; 
+    top: 50px;
+    right: 20px; 
+    z-index: 10000;
+}
+
+.btn-abrir-menu i{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}  
+
+.menu-mobile {
+    background-color: rgba(255, 255, 255, 0.904);
+    height: 100%; 
+    width: 0%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    overflow: hidden;
+    transition: .7s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.menu-mobile nav ul li a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 300;
+    padding: 20px 8%; 
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: rgba(189, 189, 189, 0.795);
+    color: white;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+
+.menu-mobile .btn-fechar i{
+    color: black;
+    font-size: 30px;
+}
+
+.overlay-menu{
+    background-color: rgba(255, 255, 255, 0.658);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/*main*/
+
+.about-section {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1; /* Permite que a imagem ocupe mais espaço no layout */
+}
+
+.about-image img {
+    width: 600px; /* Removendo limitação da largura */
+    height: 700px; /* Definindo uma altura fixa maior */
+    border-radius: 30px;
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    margin-top: 60px;
+}
+
+.about-text {
+    max-width: 600px;
+    flex: 1; /* Para garantir que o texto também ocupe espaço adequadamente */
+}
+
+.about-text h2 {
+    font-size: 62px;
+    font-weight: 400;
+    color: black;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    letter-spacing: normal !important;
+}
+
+.about-text h2 span {
+    color: #DA291C;
+    letter-spacing: normal !important;
+}
+
+.about-text .highlight {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 32px;
+}
+
+.about-text p {
+    font-size: 24px;
+    color: #000;
+    line-height: 32px;
+    letter-spacing: 0.6px;
+
+}
+
+.about-text p {
+    font-size: 24px;
+    color: #000;
+    line-height: 32px;
+    letter-spacing: 0.6px;
+}
+
+.about-text .maior {
+    font-size: 18px;
+    color: #000;
+    line-height: 26px;
+}
+
+
+/* OUR IMPACT */
+.impact-section {
+    background-color: #fff;
+    padding: 80px 0;
+    margin: 0;
+    position: relative;
+}
+
+.impact-section::before,
+.impact-section::after {
+    content: "";
+    position: absolute;
+    width: 100vw; /* Linhas ocupam toda a largura da tela */
+    height: 1px; /* Espessura da linha */
+    background-color: #000; /* Cor da linha */
+    left: 0;
+}
+
+.impact-section::before {
+    top: 15px; /* Linha no topo da seção */
+}
+
+.impact-section::after {
+    bottom: 15px; /* Linha no final da seção */
+}
+
+/* Estilo para o contêiner de texto */
+.impact-container {
+    max-width: 900px;
+    margin: 0 auto; /* Centraliza o contêiner */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estilo para o título */
+.impact-container h1 {
+    font-size: 62px;
+    line-height: 70px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #000;
+    font-weight: 400;
+    text-align: left; /* Texto alinhado à esquerda */
+}
+
+/* Estilo para o subtítulo */
+.impact-container p {
+    font-size: 18px;
+    line-height: 26px;
+    color: #000;
+    margin: 20px 0;
+    text-align: left; /* Texto alinhado à esquerda */
+}
+
+
+/* OUR IMPACT 2 */
+
+section.portfolio{
+    padding: 30px 4%;
+}
+
+section.portfolio .flex{
+    gap: 30px;
+}
+
+.img-port{
+    width: 400px;
+    height: 600px;
+    background-color: #000;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  #0000009c;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.904);
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+
+/* ESTILO FOOTER */
+
+footer{
+    background-color: #292E32;
+    color: white;
+    padding: 40px 0;
+}
+
+footer .line-footer1{
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 40px;
+}
+
+.line-footer1 h2{
+    font-size: 2.5rem;
+}
+
+.line-footer1 p{
+    font-size: 1.2rem;
+    margin: 10px 0 20px 0;
+}
+
+.line-footer1 form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-footer1 form input[type=email]{
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px;
+    outline: 0;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.line-footer1 form input[type=submit]{
+    padding: 10px 30px;
+    background-color: rgba(255, 0, 0, 0.849);
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.973);
+    transition: .2s;
+    margin-left: 5px;
+}
+
+.line-footer1 form input[type=submit]:hover{
+    box-shadow: 0px 0px 8px #DA291C;
+    transform: scale(1.05);
+}
+
+footer .line-footer2{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+
+footer .line-footer2 .box-line-footer{
+    max-width: calc(100% / 5);
+}
+
+.endereco-footers ul li{
+    list-style-type: none;
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 16px;
+
+}
+
+footer .box-line-footer img{
+    max-width: 200px;
+    padding: auto;
+    margin-left: 85px;
+}
+
+footer .box-line-footer p{
+    margin-left: 50px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.line-footer2 .box-line-footer h3{
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.line-footer2 .box-line-footer .links-footers a{
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 6px;
+    font-weight: 300;
+    transition: .2s;
+}
+
+.line-footer2 .box-line-footer a:hover{
+    transform: scale(1.05);
+}
+
+.box-line-footer .btn-redes a{
+    display: inline;
+    margin-right: 10px;
+}
+
+.box-line-footer .btn-redes button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.box-line-footer .btn-redes button:hover{
+    transform: scale(1.05);
+}
+
+footer .line-footer3 {
+    padding-top: 30px;
+    text-align: center;
+}
+
+#newsletter-form {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+#newsletter-email {
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 300px; 
+    transition: all 0.3s ease-in-out; 
+}
+
+.btn-cadastre-se {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #DA291C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; 
+}
+
+.btn-cadastre-se:hover {
+    background-color: #b22218; 
+    transform: scale(1.05); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+@media screen and (max-width: 1020px) {
+    
+    /* MENU MOBILE*/
+     
+    .menu-desktop, .btn-doacao{
+        display: none;
+    }
+
+    .btn-abrir-menu{
+        display: block;
+    }
+   
+    .btn-abrir-menu i{
+        font-size: 35px;
+    }
+    
+
+
+    /* PARTE IMG E TEXTO */
+    .about-container {
+        flex-direction: column; /* Altera a disposição para empilhar os itens*/
+        gap: 20px; /* Reduz o espaço entre os elementos no mobile */
+        text-align: justify; /* Justifica o texto no mobile */
+        padding: 0 20px; /* Adiciona margem igual nas laterais do container */
+    }
+
+    .about-image {
+        order: 2; /* Garante que a imagem apareça depois do texto no mobile */
+    }
+
+    .about-text {
+        order: 1; /* Garante que o texto apareça primeiro no mobile */
+        margin: 0 15px; /* Margem lateral ajustada para ser igual nos dois lados */
+        margin-top: 0 ;
+    }
+
+    .about-image img {
+        width: 100%; /* Imagem ocupa toda a largura disponível no mobile */
+        height: 600px; /* Altura ajustada automaticamente para manter a proporção */
+        opacity: 0;
+        animation: fadeIn 3s ease-in-out forwards;
+    }
+
+    .about-text h2 {
+        font-size: 56px; /* Reduz o tamanho da fonte do título no mobile */
+        margin-top: 20px;
+        line-height: 56px !important; /* Garante que o espaçamento de linha fique consistente */
+        letter-spacing: 0px !important; /* Força o espaçamento correto entre letras */
+        word-spacing: 0px !important; /* Remove o espaçamento extra entre as palavras */
+        white-space: normal; /* Garante quebra de linha normal */
+        display: inline-block; /* Garante que as palavras fiquem mais juntas */
+        text-align: left;
+    }
+
+    .about-text h2 span {
+        color: #DA291C;
+        letter-spacing: 0px !important; /* Garante que o span herde o espaçamento correto */
+        word-spacing: 0px !important;
+    }
+
+    .about-text .highlight {
+        font-size: 20px; /* Ajuste no tamanho do destaque */
+        line-height: 28px;
+    }
+
+    .about-text p {
+        font-size: 16px; /* Ajusta o tamanho do texto para o mobile */
+        line-height: 26px;
+        letter-spacing: 0.3px; /* Reduz o espaço entre as letras no mobile */
+        margin-bottom: 0px; 
+    }
+
+     /*OUR IMPACT*/
+
+     .flex {
+        flex-direction: column;
+     }
+
+    .img-port{
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .impact-container {
+        padding: 0 15px; /* Adiciona espaçamento nas laterais no mobile */
+        text-align: justify; /* Justifica o texto no mobile */
+    }
+
+    .impact-container h1 {
+        font-size: 48px; /* Diminui o tamanho da fonte do título no mobile */
+        line-height: 54px; /* Ajusta a altura da linha */
+    }
+
+    .impact-container p {
+        font-size: 16px; /* Diminui o tamanho da fonte do parágrafo no mobile */
+        line-height: 22px; /* Ajusta a altura da linha */
+    }
+
+    .impact-section::before,
+    .impact-section::after {
+        width: 100%; /* Linhas ocupam toda a largura da tela no mobile */
+    }
+
+    .impact-section::before {
+        top: 10px; /* Ajuste no espaçamento da linha superior no mobile */
+    }
+
+    .impact-section::after {
+        bottom: 10px; /* Ajuste no espaçamento da linha inferior no mobile */
+    }    
+ 
+     /*RODAPE*/
+
+     footer .line-footer2 img,
+     footer .line-footer2 p {
+     display: none;
+     }
+ 
+     .box-line-footer .btn-redes button{
+         margin-bottom: 5px;
+     }
+ 
+     .box-line-footer .btn-redes a{
+     margin-right: 100px;
+     } 
+}
+
+.fade-in {
+    opacity: 1; /* Torna visível */
+    transform: translateY(0); /* Remove o deslocamento */
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

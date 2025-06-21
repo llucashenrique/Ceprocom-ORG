@@ -1,0 +1,32 @@
+{
+  "name": "projeto_ceprocom",
+  "version": "1.0.0",
+  "description": "Mercado Pago Pix",
+  "main": "pix.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "type": "module",
+  "author": "Lucas Lino",
+  "license": "ISC",
+  "dependencies": {
+    "@mercadopago/sdk-react": "^0.0.19",
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mercadopago": "^1.5.17",
+    "mysql2": "^3.11.3",
+    "nodemailer": "^6.9.15",
+    "uuid": "^11.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llucashenrique/mercadolivreteste.git"
+  },
+  "bugs": {
+    "url": "https://github.com/llucashenrique/mercadolivreteste/issues"
+  },
+  "homepage": "https://github.com/llucashenrique/mercadolivreteste#readme"
+}
