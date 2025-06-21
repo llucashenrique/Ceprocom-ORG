@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+    <!--Google fonts-->
+
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Bootstrap icons-->
+
+    <link rel="stylesheet" href="../css/stylecadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>Registration</header>
+
+        <form method="post" action="send_email.php">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" id="birth" name="birth" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" id="email" id="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" id="mobnumber" name="mobnumber" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <input type="text" id="gender" name="gender" placeholder="Enter your gender" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" id="occupation" name="occupation" placeholder="Enter your occupation" required>
+                        </div>
+                    </div> <!-- fields -->
+                </div> <!-- details -->
+
+                <div class="details ID">
+                    <span class="title">Identify Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>ID Type</label>
+                            <input type="text"  id="idty" name="idty" placeholder="Enter ID type" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>ID number</label>
+                            <input type="number" id="idnum" name="idnum" placeholder="Enter ID number " required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issue Authoruty</label>
+                            <input type="text" id="issueaut" name="issueaut" placeholder="Enter issue authoruty" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issue State</label>
+                            <input type="text" id="issuesta" name="issuesta" placeholder="Enter issue state" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issue Date</label>
+                            <input type="date" id="issuedate" name="issuedate" placeholder="Enter date " required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Expery Date</label>
+                            <input type="date" id="expirydate" name="expirydate" placeholder="Enter expiry date" required>
+                        </div>
+                        
+                    </div> <!-- fields -->
+                    <button class="nextBtn">
+                        <span class="btnText">Next </span>
+                        <i class="bi bi-arrow-right-circle"></i>
+                    </button>
+                </div> <!-- details -->
+            </div> <!-- form first -->
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Address Type</label>
+                            <input type="text" id="address" name="address" placeholder="Enter address type" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Nationality</label>
+                            <input type="text" id="nationality" name="nationality" placeholder="Enter your nationality" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>State</label>
+                            <input type="text" id="state" name="state" placeholder="Enter your State" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>District</label>
+                            <input type="text" id="district" name="district" placeholder="Enter your district" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Block Number</label>
+                            <input type="number" id="blocknum" name="blocknum" placeholder="Enter your block number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ward Number</label>
+                            <input type="number" id="wardnum" name="wardnum" placeholder="Enter your ward number" required>
+                        </div>
+                    </div> <!-- fields -->
+                </div> <!-- details -->
+
+                <div class="details Family">
+                    <span class="title">Family Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Father Name</label>
+                            <input type="text" placeholder="Enter father name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mother Name</label>
+                            <input type="text" placeholder="Enter mother name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Grandfather</label>
+                            <input type="text" placeholder="Enter Grandfather name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Spouse Name</label>
+                            <input type="text" placeholder="Enter spouse name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Father in Law</label>
+                            <input type="text" placeholder="Father in Law name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mother in Law</label>
+                            <input type="text" placeholder="Mother in Law name" required>
+                        </div>
+                    </div> <!-- fields -->
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="bi bi-arrow-right-circle"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+
+                        <button class="nextBtn">
+                            <span class="btnText">Next</span>
+                            <i class="bi bi-arrow-right-circle"></i>
+                        </button>
+                        <button type="submit" class="submitBtn">
+                            <span class="btnText">Submit</span>
+                            <i class="bi bi-check-circle"></i>
+                        </button>
+                    </div><!-- buttons -->
+
+                </div> <!-- details -->
+            </div> <!-- form first -->
+
+        </form> <!-- form -->
+    </div> <!-- container -->
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
